@@ -62,20 +62,20 @@ class ZabbixMonitor:
 
 
         # Initialize application settings
-        self.__app_name = 'DetranSC'
+        self.__app_name = 'Zabbix-Monitor' #you can change here to your zabbix name instance
         self.zabbix_url = f"{os.getenv('zabbix_url')}/api_jsonrpc.php"
         self.web_url = os.getenv('zabbix_url')  # Base URL for web interface
         self.username = os.getenv('zabbix_user')
         self.password = os.getenv('zabbix_password')
         self.auth_token = os.getenv('zabbix_token')
         self.problems = []
-        self.update_interval = 10  # 10 seconds
+        self.update_interval = 10  # 10 seconds timeout APi check
         self.recent_minutes = 120  # Time window for recent issues
         self.graph_buttons = {}  # Store graph buttons for removal later
 
         # Setup session with web interface authentication
         self.session = requests.Session()
-        self.session.headers.update({'User-Agent': 'ZabbixMonitorApp'})
+        self.session.headers.update({'User-Agent': 'ZabbixMonitorApp'}) #to see in logs the user-agent from app.
         self.perform_web_login()  # Authenticate with web interface
 
         # GUI setup
