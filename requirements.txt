@@ -1,0 +1,5 @@
+beautifulsoup4==4.8.1
+pillow==11.1.0
+python-dotenv==1.0.1
+requests==2.21.0
+requests-toolbelt==0.9.1
