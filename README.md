@@ -60,5 +60,5 @@ Este projeto está sob a licença MIT. Sinta-se livre para modificar e distribui
 Se quiser contribuir, faça um fork do repositório, crie uma branch e envie um pull request!
 
 ---
-**Desenvolvido por [Seu Nome]**
+**Desenvolvido por [~ Kassio Andrade~ ]**
 
